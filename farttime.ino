@@ -36,10 +36,11 @@ void loop() {
     }
     Serial.printf("UDP packet contents: %s\n", incomingPacket);
     
-    // send back a reply, to the IP address and port we got the packet from
-    udp.beginPacket(udp.remoteIP(), udp.remotePort());
-    udp.write(replyPacket);
-    udp.endPacket();
+
+udp.beginPacket(udp.remoteIP(), udp.remotePort());
+udp.write((uint8_t *)replyPacket, sizeof(replyPacket) - 1);
+udp.endPacket();
+
   }
   delay(10);
 }
