@@ -1,2 +1,2 @@
 # Pico-Water-Meter
-Rasberry Pi / Pico Simple Water meter script for individual plant sites.   Ideally solar powered solely for reporting data.  Solar fed from grow lights being used.   
+Rasberry Pi PICO / Arduino NANO / ESP32 Experiments and scripts catch all for experiments with different boards.
